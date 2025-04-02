@@ -1,31 +1,49 @@
-
 README – Projeto de Pesquisa: Seminários 1 a 4 + Entrega Final
 
 Objetivo Geral
 --------------
-Desenvolver um projeto de pesquisa estruturado a partir de um tema relevante, com base na identificação de variáveis, formulação de perguntas, construção de hipóteses e planejamento de coleta e análise de dados.
+Desenvolver um projeto de pesquisa estruturado utilizando a base de dados Olist (Kaggle), focando na identificação de variáveis relevantes, formulação de perguntas de pesquisa, construção de hipóteses e planejamento de análise de dados reais de e-commerce brasileiro.
+
+Fonte dos Dados
+---------------
+Dataset Olist Brazilian E-commerce - Kaggle
+Link: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+Estrutura das Tabelas
+---------------------
+O projeto utilizará a estrutura relacional abaixo:
+
+- olist_orders_dataset
+- olist_order_items_dataset
+- olist_order_reviews_dataset
+- olist_order_payments_dataset
+- olist_order_customer_dataset
+- olist_sellers_dataset
+- olist_products_dataset
+- olist_geolocation_dataset
 
 SEMINÁRIO 1 – Definição do Tema e Estrutura Inicial
 --------------------------------------------------
 
 1. Tema
-> (Descreva aqui o tema do projeto, geralmente em forma de pergunta)
+> (Defina aqui a pergunta de pesquisa a ser respondida)
 
 2. Variáveis Envolvidas (Xs e Ys)
 
-| Índice | Nome da Variável | Unidade | Natureza         | Níveis                            |
-|--------|------------------|---------|------------------|-----------------------------------|
-| y1     | Lead Time        | dias    | Contínua         | -                                 |
-| x1     | Requisitante     | -       | Nominal          | (Nível 1, Nível 2, ..., Nível n)  |
-| x2     | Comprador        | -       | Nominal          | (Nível 1, Nível 2, ..., Nível n)  |
-| x3     | Nacionalidade    | -       | Nominal          | (Nacional, Internacional)         |
-| ...    | ...              | ...     | ...              | ...                               |
+| Índice | Nome da Variável                  | Unidade         | Natureza    | Níveis (exemplo)                   |
+|--------|-----------------------------------|-----------------|-------------|-----------------------------------|
+| y1     | Nota de avaliação (review_score) | Pontos (1-5)    | Discreta    | 1, 2, 3, 4, 5                     |
+| x1     | Tempo de entrega real            | Dias            | Contínua    | -                                 |
+| x2     | Tempo estimado de entrega        | Dias            | Contínua    | -                                 |
+| x3     | Tipo de pagamento                | Categoria       | Nominal     | Credit_card, Boleto, Voucher, etc |
+| x4     | Preço total da compra            | R$              | Contínua    | -                                 |
+| x5     | Quantidade de itens              | Unidades        | Discreta    | -                                 |
+
+> As variáveis podem ser ajustadas conforme o tema escolhido.
 
 3. Problemas a serem estudados
-> (Liste aqui os problemas que você pretende investigar)
 
 4. Hipóteses a serem verificadas
-> (Liste aqui as hipóteses que serão testadas)
 
 SEMINÁRIO 2 – Planejamento de Coleta de Dados
 --------------------------------------------
@@ -42,3 +60,6 @@ SEMINÁRIO 4 – Resultados Iniciais e Validação das Hipóteses
 ENTREGA FINAL – Projeto Consolidado
 -----------------------------------
 
+LINK DO REPOSITÓRIO NO KAGGLE
+-----------------------------
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=olist_products_dataset.csv
