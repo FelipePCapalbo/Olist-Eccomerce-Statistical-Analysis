@@ -1,0 +1,77 @@
+2025-04-03 23:58:26,514 - INFO - Database connection established successfully
+2025-04-03 23:58:26,515 - INFO - All tables created successfully
+2025-04-03 23:58:26,515 - INFO - Loading olist_geolocation_dataset.csv into olist_geolocation_dataset...
+2025-04-03 23:58:57,433 - INFO - Finished loading olist_geolocation_dataset.csv into olist_geolocation_dataset. Rows: 1000163. Duration: 0:00:30.918231
+2025-04-03 23:58:57,433 - INFO - Loading olist_sellers_dataset.csv into olist_sellers_dataset...
+2025-04-03 23:58:57,506 - ERROR - Error loading data from olist_sellers_dataset.csv: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-03 23:58:57,506 - ERROR - An error occurred: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-03 23:58:57,506 - INFO - Database connection closed
+2025-04-04 00:02:46,373 - INFO - Conexão com o banco de dados estabelecida com sucesso
+2025-04-04 00:02:46,374 - INFO - Todas as tabelas foram criadas com sucesso
+2025-04-04 00:02:46,375 - ERROR - Erro ao desativar verificação de FK: permission denied to set parameter "session_replication_role"
+
+2025-04-04 00:02:46,375 - ERROR - Ocorreu um erro: local variable 'csv_file' referenced before assignment
+2025-04-04 00:02:46,375 - INFO - Conexão com o banco de dados fechada
+2025-04-04 00:06:38,438 - INFO - Conexão com o banco de dados estabelecida com sucesso
+2025-04-04 00:06:38,438 - INFO - Todas as tabelas foram criadas com sucesso
+2025-04-04 00:06:38,439 - INFO - Carregando olist_geolocation_dataset.csv na tabela olist_geolocation_dataset...
+2025-04-04 00:07:09,591 - INFO - Concluído o carregamento de olist_geolocation_dataset.csv na tabela olist_geolocation_dataset. Linhas: 1000163. Duração: 0:00:31.151662
+2025-04-04 00:07:09,591 - INFO - Carregando olist_sellers_dataset.csv na tabela olist_sellers_dataset...
+2025-04-04 00:07:09,650 - ERROR - Erro ao carregar dados: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-04 00:07:09,650 - ERROR - Ocorreu um erro: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-04 00:07:09,651 - INFO - Conexão com o banco de dados fechada
+2025-04-04 00:10:28,318 - INFO - Conexão com o banco de dados estabelecida com sucesso
+2025-04-04 00:10:28,323 - INFO - Constraints de chave estrangeira removidas temporariamente
+2025-04-04 00:10:28,325 - INFO - Todas as tabelas foram criadas com sucesso
+2025-04-04 00:10:28,325 - INFO - Carregando olist_geolocation_dataset.csv na tabela olist_geolocation_dataset...
+2025-04-04 00:11:00,059 - INFO - Concluído o carregamento de olist_geolocation_dataset.csv na tabela olist_geolocation_dataset. Linhas: 1000163. Duração: 0:00:31.734319
+2025-04-04 00:11:00,059 - INFO - Carregando olist_sellers_dataset.csv na tabela olist_sellers_dataset...
+2025-04-04 00:11:00,119 - ERROR - Erro ao carregar dados: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-04 00:11:00,120 - ERROR - Ocorreu um erro: insert or update on table "olist_sellers_dataset" violates foreign key constraint "olist_sellers_dataset_seller_zip_code_prefix_fkey"
+DETAIL:  Key (seller_zip_code_prefix)=(82040) is not present in table "olist_geolocation_dataset".
+
+2025-04-04 00:11:00,120 - INFO - Conexão com o banco de dados fechada
+2025-04-04 00:14:16,108 - INFO - Conexão com o banco de dados estabelecida com sucesso
+2025-04-04 00:14:16,111 - INFO - Removida constraint: olist_sellers_dataset_seller_zip_code_prefix_fkey da tabela olist_sellers_dataset
+2025-04-04 00:14:16,113 - INFO - Removida constraint: olist_order_customer_dataset_customer_zip_code_prefix_fkey da tabela olist_order_customer_dataset
+2025-04-04 00:14:16,113 - INFO - Removida constraint: olist_orders_dataset_customer_id_fkey da tabela olist_orders_dataset
+2025-04-04 00:14:16,114 - INFO - Removida constraint: olist_order_items_dataset_order_id_fkey da tabela olist_order_items_dataset
+2025-04-04 00:14:16,114 - INFO - Removida constraint: olist_order_items_dataset_product_id_fkey da tabela olist_order_items_dataset
+2025-04-04 00:14:16,114 - INFO - Removida constraint: olist_order_items_dataset_seller_id_fkey da tabela olist_order_items_dataset
+2025-04-04 00:14:16,115 - INFO - Removida constraint: olist_order_reviews_dataset_order_id_fkey da tabela olist_order_reviews_dataset
+2025-04-04 00:14:16,115 - INFO - Removida constraint: olist_order_payments_dataset_order_id_fkey da tabela olist_order_payments_dataset
+2025-04-04 00:14:16,120 - INFO - Todas as constraints de chave estrangeira removidas
+2025-04-04 00:14:16,123 - INFO - Todas as tabelas existentes removidas
+2025-04-04 00:14:16,147 - INFO - Todas as tabelas foram recriadas sem constraints
+2025-04-04 00:14:16,147 - INFO - Carregando olist_geolocation_dataset.csv na tabela olist_geolocation_dataset...
+2025-04-04 00:14:47,784 - INFO - Concluído o carregamento de olist_geolocation_dataset.csv na tabela olist_geolocation_dataset. Linhas: 1000163. Duração: 0:00:31.636693
+2025-04-04 00:14:47,826 - INFO - Carregando olist_sellers_dataset.csv na tabela olist_sellers_dataset...
+2025-04-04 00:14:47,928 - INFO - Concluído o carregamento de olist_sellers_dataset.csv na tabela olist_sellers_dataset. Linhas: 3095. Duração: 0:00:00.101561
+2025-04-04 00:14:47,928 - INFO - Carregando olist_products_dataset.csv na tabela olist_products_dataset...
+2025-04-04 00:14:47,993 - WARNING - Erro no carregamento em lote, tentando registro por registro: integer out of range
+
+2025-04-04 00:14:50,866 - WARNING - Carregamento com fallback: 32340/32951 registros inseridos
+2025-04-04 00:14:50,866 - INFO - Concluído o carregamento de olist_products_dataset.csv na tabela olist_products_dataset. Linhas: 32951. Duração: 0:00:02.938189
+2025-04-04 00:14:50,869 - INFO - Carregando olist_customers_dataset.csv na tabela olist_order_customer_dataset...
+2025-04-04 00:14:54,420 - INFO - Concluído o carregamento de olist_customers_dataset.csv na tabela olist_order_customer_dataset. Linhas: 99441. Duração: 0:00:03.551633
+2025-04-04 00:14:54,428 - INFO - Carregando olist_orders_dataset.csv na tabela olist_orders_dataset...
+2025-04-04 00:14:58,660 - INFO - Concluído o carregamento de olist_orders_dataset.csv na tabela olist_orders_dataset. Linhas: 99441. Duração: 0:00:04.232566
+2025-04-04 00:14:58,675 - INFO - Carregando olist_order_items_dataset.csv na tabela olist_order_items_dataset...
+2025-04-04 00:15:03,152 - INFO - Concluído o carregamento de olist_order_items_dataset.csv na tabela olist_order_items_dataset. Linhas: 112650. Duração: 0:00:04.477050
+2025-04-04 00:15:03,161 - INFO - Carregando olist_order_reviews_dataset.csv na tabela olist_order_reviews_dataset...
+2025-04-04 00:15:06,973 - INFO - Concluído o carregamento de olist_order_reviews_dataset.csv na tabela olist_order_reviews_dataset. Linhas: 99224. Duração: 0:00:03.812078
+2025-04-04 00:15:06,985 - INFO - Carregando olist_order_payments_dataset.csv na tabela olist_order_payments_dataset...
+2025-04-04 00:15:10,446 - INFO - Concluído o carregamento de olist_order_payments_dataset.csv na tabela olist_order_payments_dataset. Linhas: 103886. Duração: 0:00:03.460275
+2025-04-04 00:15:10,459 - INFO - Constraints de chave estrangeira adicionadas com NOT VALID
+2025-04-04 00:15:10,459 - INFO - Todos os dados foram carregados no banco PostgreSQL com sucesso!
+2025-04-04 00:15:10,459 - INFO - Conexão com o banco de dados fechada
