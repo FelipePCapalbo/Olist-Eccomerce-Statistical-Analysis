@@ -1,0 +1,89 @@
+INICIANDO ANÁLISE ESTATÍSTICA ABRANGENTE
+============================================================
+=== CARREGAMENTO E ANÁLISE DE QUALIDADE DOS DADOS ===
+Carregando datasets...
+
+1. ANÁLISE DE QUALIDADE DOS DADOS
+   • Itens sem produto ID: 0
+   • Itens sem preço: 0
+   • Produtos sem categoria: 610
+
+2. CONSTRUÇÃO DO DATASET INTEGRADO
+   • Registros após merge completo: 112650
+
+3. APLICAÇÃO DE FILTROS DE QUALIDADE
+   • Registros após filtro de pedidos entregues: 110197
+   • Registros após remoção de NAs críticos: 108638
+   • Registros após filtros de preço: 108638
+
+4. AGREGAÇÃO POR PEDIDO
+   • Pedidos únicos finais: 95127
+
+5. ANÁLISE DE DISTRIBUIÇÃO FINAL
+   • Estados únicos: 27
+   • Categorias únicas: 71
+   • Top 5 estados:
+     SP: 39954 pedidos (42.0%)
+     RJ: 12166 pedidos (12.8%)
+     MG: 11187 pedidos (11.8%)
+     RS: 5268 pedidos (5.5%)
+     PR: 4855 pedidos (5.1%)
+   • Top 5 categorias:
+     bed_bath_table: 9240 pedidos (9.7%)
+     health_beauty: 8621 pedidos (9.1%)
+     sports_leisure: 7478 pedidos (7.9%)
+     computers_accessories: 6520 pedidos (6.9%)
+     furniture_decor: 6208 pedidos (6.5%)
+
+=== DEFINIÇÃO DE ESTRATÉGIA DE ANÁLISE ===
+Estados com amostra mínima (≥100): 24/27
+Categorias com amostra mínima (≥100): 51/71
+Combinações viáveis estado-categoria (≥30): 363/1349
+RECOMENDAÇÃO: Análise cruzada completa estado × categoria
+
+=== ANÁLISE ABRANGENTE: ORDER_TICKET ===
+Dados para análise: 38398 registros
+Categorias analisadas: ['bed_bath_table', 'health_beauty', 'sports_leisure', 'computers_accessories', 'furniture_decor', 'housewares']
+Estados analisados: ['SP', 'RJ', 'MG', 'RS', 'PR', 'SC', 'BA', 'DF']
+   → Análise composta salva: charts/composite_order_ticket_sp.png
+   → Análise composta salva: charts/composite_order_ticket_rj.png
+   → Análise composta salva: charts/composite_order_ticket_mg.png
+   → Análise composta salva: charts/composite_order_ticket_rs.png
+   → Análise composta salva: charts/composite_order_ticket_pr.png
+   → Análise composta salva: charts/composite_order_ticket_sc.png
+   → Análise composta salva: charts/composite_order_ticket_ba.png
+   → Análise composta salva: charts/composite_order_ticket_df.png
+
+=== ANÁLISE ABRANGENTE: FREIGHT_RATIO ===
+Dados para análise: 38398 registros
+Categorias analisadas: ['bed_bath_table', 'health_beauty', 'sports_leisure', 'computers_accessories', 'furniture_decor', 'housewares']
+Estados analisados: ['SP', 'RJ', 'MG', 'RS', 'PR', 'SC', 'BA', 'DF']
+   → Análise composta salva: charts/composite_freight_ratio_sp.png
+   → Análise composta salva: charts/composite_freight_ratio_rj.png
+   → Análise composta salva: charts/composite_freight_ratio_mg.png
+   → Análise composta salva: charts/composite_freight_ratio_rs.png
+   → Análise composta salva: charts/composite_freight_ratio_pr.png
+   → Análise composta salva: charts/composite_freight_ratio_sc.png
+   → Análise composta salva: charts/composite_freight_ratio_ba.png
+   → Análise composta salva: charts/composite_freight_ratio_df.png
+
+=== ANÁLISE ABRANGENTE: N_ITEMS ===
+Dados para análise: 38398 registros
+Categorias analisadas: ['bed_bath_table', 'health_beauty', 'sports_leisure', 'computers_accessories', 'furniture_decor', 'housewares']
+Estados analisados: ['SP', 'RJ', 'MG', 'RS', 'PR', 'SC', 'BA', 'DF']
+   → Análise composta salva: charts/composite_n_items_sp.png
+   → Análise composta salva: charts/composite_n_items_rj.png
+   → Análise composta salva: charts/composite_n_items_mg.png
+   → Análise composta salva: charts/composite_n_items_rs.png
+   → Análise composta salva: charts/composite_n_items_pr.png
+   → Análise composta salva: charts/composite_n_items_sc.png
+   → Análise composta salva: charts/composite_n_items_ba.png
+   → Análise composta salva: charts/composite_n_items_df.png
+
+=== GERANDO RELATÓRIO ABRANGENTE ===
+   → Relatório salvo: comprehensive_analysis_report.md
+
+============================================================
+ANÁLISE ABRANGENTE CONCLUÍDA
+Total de gráficos gerados: 24
+Verifique o arquivo 'comprehensive_analysis_report.md' para o relatório detalhado

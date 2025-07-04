@@ -1,0 +1,594 @@
+================================================================================
+ANÁLISE DE SAZONALIDADE POR DATAS COMEMORATIVAS
+================================================================================
+Carregando dados...
+Dados carregados: 95127 pedidos
+
+Distribuição de pedidos por período sazonal:
+normal: 83,514 pedidos (87.8%)
+dia_dos_pais: 4,474 pedidos (4.7%)
+dia_das_maes: 3,819 pedidos (4.0%)
+dia_das_criancas: 1,861 pedidos (2.0%)
+natal: 1,459 pedidos (1.5%)
+
+================================================================================
+ANÁLISE: TICKET MÉDIO POR CATEGORIA EM DATAS COMEMORATIVAS
+================================================================================
+
+--- CATEGORIA: BED_BATH_TABLE ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    144   97.36   87.35
+dia_das_maes        306  112.35  102.13
+dia_dos_pais        420  126.79  126.41
+natal               144  102.33   67.18
+normal             8226  111.73  104.74
+
+dia_das_maes vs normal:
+  Médias: 112.35 vs 111.73
+  P-value: 0.941188 ns
+  Ticket MAIOR na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 126.79 vs 111.73
+  P-value: 0.062603 ns
+  Ticket MAIOR na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 97.36 vs 111.73
+  P-value: 0.050385 ns
+  Ticket menor na data comemorativa
+
+natal vs normal:
+  Médias: 102.33 vs 111.73
+  P-value: 0.921734 ns
+  Ticket menor na data comemorativa
+
+--- CATEGORIA: HEALTH_BEAUTY ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    152  115.65  124.85
+dia_das_maes        389  135.52  179.14
+dia_dos_pais        459  162.28  221.93
+natal               113  155.14  343.52
+normal             7508  142.84  189.38
+
+dia_das_maes vs normal:
+  Médias: 135.52 vs 142.84
+  P-value: 0.328896 ns
+  Ticket menor na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 162.28 vs 142.84
+  P-value: 0.262674 ns
+  Ticket MAIOR na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 115.65 vs 142.84
+  P-value: 0.324199 ns
+  Ticket menor na data comemorativa
+
+natal vs normal:
+  Médias: 155.14 vs 142.84
+  P-value: 0.654008 ns
+  Ticket MAIOR na data comemorativa
+
+--- CATEGORIA: SPORTS_LEISURE ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    184  118.49  144.79
+dia_das_maes        267  151.75  204.42
+dia_dos_pais        321  117.41  140.10
+natal               119  128.29  167.77
+normal             6587  127.07  175.48
+
+dia_das_maes vs normal:
+  Médias: 151.75 vs 127.07
+  P-value: 0.011177 ***
+  Ticket MAIOR na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 117.41 vs 127.07
+  P-value: 0.061735 ns
+  Ticket menor na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 118.49 vs 127.07
+  P-value: 0.303090 ns
+  Ticket menor na data comemorativa
+
+natal vs normal:
+  Médias: 128.29 vs 127.07
+  P-value: 0.469505 ns
+  Ticket MAIOR na data comemorativa
+
+--- CATEGORIA: COMPUTERS_ACCESSORIES ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas     96  141.92  213.73
+dia_das_maes        194  123.18  142.40
+dia_dos_pais        297  119.29  117.34
+natal                72  196.94  364.39
+normal             5861  137.27  214.73
+
+dia_das_maes vs normal:
+  Médias: 123.18 vs 137.27
+  P-value: 0.937839 ns
+  Ticket menor na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 119.29 vs 137.27
+  P-value: 0.462337 ns
+  Ticket menor na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 141.92 vs 137.27
+  P-value: 0.355541 ns
+  Ticket MAIOR na data comemorativa
+
+natal vs normal:
+  Médias: 196.94 vs 137.27
+  P-value: 0.001537 ***
+  Ticket MAIOR na data comemorativa
+
+--- CATEGORIA: FURNITURE_DECOR ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    127  113.95  118.54
+dia_das_maes        256  111.20   99.24
+dia_dos_pais        269  120.38  104.76
+natal                82  131.48  211.25
+normal             5474  114.96  117.85
+
+dia_das_maes vs normal:
+  Médias: 111.20 vs 114.96
+  P-value: 0.832350 ns
+  Ticket menor na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 120.38 vs 114.96
+  P-value: 0.103334 ns
+  Ticket MAIOR na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 113.95 vs 114.96
+  P-value: 0.565299 ns
+  Ticket menor na data comemorativa
+
+natal vs normal:
+  Médias: 131.48 vs 114.96
+  P-value: 0.428157 ns
+  Ticket MAIOR na data comemorativa
+
+--- CATEGORIA: HOUSEWARES ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas     70   89.79   76.65
+dia_das_maes        259  110.06  119.33
+dia_dos_pais        328  104.56  165.00
+natal                74  110.42   94.30
+normal             4940  108.21  167.57
+
+dia_das_maes vs normal:
+  Médias: 110.06 vs 108.21
+  P-value: 0.231014 ns
+  Ticket MAIOR na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 104.56 vs 108.21
+  P-value: 0.552260 ns
+  Ticket menor na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 89.79 vs 108.21
+  P-value: 0.745673 ns
+  Ticket menor na data comemorativa
+
+natal vs normal:
+  Médias: 110.42 vs 108.21
+  P-value: 0.291264 ns
+  Ticket MAIOR na data comemorativa
+
+--- CATEGORIA: WATCHES_GIFTS ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas     89  285.43  272.69
+dia_das_maes        347  183.56  211.41
+dia_dos_pais        267  192.35  233.79
+natal               101  184.14  175.73
+normal             4651  215.26  271.74
+
+dia_das_maes vs normal:
+  Médias: 183.56 vs 215.26
+  P-value: 0.167198 ns
+  Ticket menor na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 192.35 vs 215.26
+  P-value: 0.072561 ns
+  Ticket menor na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 285.43 vs 215.26
+  P-value: 0.003075 ***
+  Ticket MAIOR na data comemorativa
+
+natal vs normal:
+  Médias: 184.14 vs 215.26
+  P-value: 0.940561 ns
+  Ticket menor na data comemorativa
+
+--- CATEGORIA: TELEPHONY ---
+
+Estatísticas por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas     87   83.66   99.50
+dia_das_maes        159   62.29  145.97
+dia_dos_pais        176  143.52  209.57
+natal                70   34.17   18.67
+normal             3579   73.80  143.23
+
+dia_das_maes vs normal:
+  Médias: 62.29 vs 73.80
+  P-value: 0.027694 ***
+  Ticket menor na data comemorativa
+
+dia_dos_pais vs normal:
+  Médias: 143.52 vs 73.80
+  P-value: 0.000000 ***
+  Ticket MAIOR na data comemorativa
+
+dia_das_criancas vs normal:
+  Médias: 83.66 vs 73.80
+  P-value: 0.061055 ns
+  Ticket MAIOR na data comemorativa
+
+natal vs normal:
+  Médias: 34.17 vs 73.80
+  P-value: 0.672743 ns
+  Ticket menor na data comemorativa
+
+================================================================================
+ANÁLISE COMBINATÓRIA: RANKING DE DATAS COMEMORATIVAS POR CATEGORIA
+================================================================================
+
+--- RANKING PARA BED_BATH_TABLE ---
+
+Estatísticas por período:
+dia_das_maes: 112.35 (n=306)
+dia_dos_pais: 126.79 (n=420)
+dia_das_criancas: 97.36 (n=144)
+natal: 102.33 (n=144)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 112.35 vs 126.79, p=0.27456 ns → dia_dos_pais
+dia_das_maes vs dia_das_criancas: 112.35 vs 97.36, p=0.11278 ns → dia_das_maes
+dia_das_maes vs natal: 112.35 vs 102.33, p=0.97706 ns → dia_das_maes
+dia_dos_pais vs dia_das_criancas: 126.79 vs 97.36, p=0.00724 *** → dia_dos_pais
+dia_dos_pais vs natal: 126.79 vs 102.33, p=0.23033 ns → dia_dos_pais
+dia_das_criancas vs natal: 97.36 vs 102.33, p=0.16435 ns → natal
+
+RANKING FINAL:
+1. dia_dos_pais (pontos: 2.0, média: 126.79)
+2. dia_das_maes (pontos: 1.5, média: 112.35)
+3. natal (pontos: 1.5, média: 102.33)
+4. dia_das_criancas (pontos: 1.0, média: 97.36)
+
+--- RANKING PARA HEALTH_BEAUTY ---
+
+Estatísticas por período:
+dia_das_maes: 135.52 (n=389)
+dia_dos_pais: 162.28 (n=459)
+dia_das_criancas: 115.65 (n=152)
+natal: 155.14 (n=113)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 135.52 vs 162.28, p=0.86361 ns → dia_dos_pais
+dia_das_maes vs dia_das_criancas: 135.52 vs 115.65, p=0.12173 ns → dia_das_maes
+dia_das_maes vs natal: 135.52 vs 155.14, p=0.30466 ns → natal
+dia_dos_pais vs dia_das_criancas: 162.28 vs 115.65, p=0.13434 ns → dia_dos_pais
+dia_dos_pais vs natal: 162.28 vs 155.14, p=0.40478 ns → dia_dos_pais
+dia_das_criancas vs natal: 115.65 vs 155.14, p=0.80159 ns → natal
+
+RANKING FINAL:
+1. dia_dos_pais (pontos: 1.5, média: 162.28)
+2. natal (pontos: 1.5, média: 155.14)
+3. dia_das_maes (pontos: 1.5, média: 135.52)
+4. dia_das_criancas (pontos: 1.5, média: 115.65)
+
+--- RANKING PARA SPORTS_LEISURE ---
+
+Estatísticas por período:
+dia_das_maes: 151.75 (n=267)
+dia_dos_pais: 117.41 (n=321)
+dia_das_criancas: 118.49 (n=184)
+natal: 128.29 (n=119)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 151.75 vs 117.41, p=0.00150 *** → dia_das_maes
+dia_das_maes vs dia_das_criancas: 151.75 vs 118.49, p=0.01475 *** → dia_das_maes
+dia_das_maes vs natal: 151.75 vs 128.29, p=0.40188 ns → dia_das_maes
+dia_dos_pais vs dia_das_criancas: 117.41 vs 118.49, p=0.70142 ns → dia_das_criancas
+dia_dos_pais vs natal: 117.41 vs 128.29, p=0.10492 ns → natal
+dia_das_criancas vs natal: 118.49 vs 128.29, p=0.20494 ns → natal
+
+RANKING FINAL:
+1. dia_das_maes (pontos: 2.5, média: 151.75)
+2. natal (pontos: 1.5, média: 128.29)
+3. dia_das_criancas (pontos: 1.0, média: 118.49)
+4. dia_dos_pais (pontos: 1.0, média: 117.41)
+
+--- RANKING PARA COMPUTERS_ACCESSORIES ---
+
+Estatísticas por período:
+dia_das_maes: 123.18 (n=194)
+dia_dos_pais: 119.29 (n=297)
+dia_das_criancas: 141.92 (n=96)
+natal: 196.94 (n=72)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 123.18 vs 119.29, p=0.71727 ns → dia_das_maes
+dia_das_maes vs dia_das_criancas: 123.18 vs 141.92, p=0.47127 ns → dia_das_criancas
+dia_das_maes vs natal: 123.18 vs 196.94, p=0.00270 *** → natal
+dia_dos_pais vs dia_das_criancas: 119.29 vs 141.92, p=0.62600 ns → dia_das_criancas
+dia_dos_pais vs natal: 119.29 vs 196.94, p=0.00232 *** → natal
+dia_das_criancas vs natal: 141.92 vs 196.94, p=0.00673 *** → natal
+
+RANKING FINAL:
+1. natal (pontos: 3.0, média: 196.94)
+2. dia_das_criancas (pontos: 1.0, média: 141.92)
+3. dia_das_maes (pontos: 1.0, média: 123.18)
+4. dia_dos_pais (pontos: 1.0, média: 119.29)
+
+--- RANKING PARA FURNITURE_DECOR ---
+
+Estatísticas por período:
+dia_das_maes: 111.20 (n=256)
+dia_dos_pais: 120.38 (n=269)
+dia_das_criancas: 113.95 (n=127)
+natal: 131.48 (n=82)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 111.20 vs 120.38, p=0.14870 ns → dia_dos_pais
+dia_das_maes vs dia_das_criancas: 111.20 vs 113.95, p=0.70428 ns → dia_das_criancas
+dia_das_maes vs natal: 111.20 vs 131.48, p=0.38042 ns → natal
+dia_dos_pais vs dia_das_criancas: 120.38 vs 113.95, p=0.15963 ns → dia_dos_pais
+dia_dos_pais vs natal: 120.38 vs 131.48, p=0.91781 ns → natal
+dia_das_criancas vs natal: 113.95 vs 131.48, p=0.35234 ns → natal
+
+RANKING FINAL:
+1. natal (pontos: 1.5, média: 131.48)
+2. dia_dos_pais (pontos: 1.5, média: 120.38)
+3. dia_das_criancas (pontos: 1.5, média: 113.95)
+4. dia_das_maes (pontos: 1.5, média: 111.20)
+
+--- RANKING PARA HOUSEWARES ---
+
+Estatísticas por período:
+dia_das_maes: 110.06 (n=259)
+dia_dos_pais: 104.56 (n=328)
+dia_das_criancas: 89.79 (n=70)
+natal: 110.42 (n=74)
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 110.06 vs 104.56, p=0.18086 ns → dia_das_maes
+dia_das_maes vs dia_das_criancas: 110.06 vs 89.79, p=0.38296 ns → dia_das_maes
+dia_das_maes vs natal: 110.06 vs 110.42, p=0.70958 ns → natal
+dia_dos_pais vs dia_das_criancas: 104.56 vs 89.79, p=0.92613 ns → dia_dos_pais
+dia_dos_pais vs natal: 104.56 vs 110.42, p=0.23968 ns → natal
+dia_das_criancas vs natal: 89.79 vs 110.42, p=0.30614 ns → natal
+
+RANKING FINAL:
+1. natal (pontos: 1.5, média: 110.42)
+2. dia_das_maes (pontos: 1.5, média: 110.06)
+3. dia_dos_pais (pontos: 1.5, média: 104.56)
+4. dia_das_criancas (pontos: 1.5, média: 89.79)
+
+================================================================================
+ANÁLISE: DISPOSIÇÃO PARA PAGAR FRETE EM DATAS COMEMORATIVAS
+================================================================================
+
+--- REGIÃO: NORTE ---
+
+Estatísticas de razão do frete por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas     33  0.4478  0.2541
+dia_das_maes         73  0.3736  0.2979
+dia_dos_pais         77  0.4136  0.2823
+natal                31  0.4308  0.2983
+normal             1551  0.4353  0.2948
+
+dia_das_maes vs normal:
+  Razão frete: 0.3736 vs 0.4353
+  P-value: 0.034969 ***
+  Disposição menor para pagar frete na data comemorativa
+
+dia_dos_pais vs normal:
+  Razão frete: 0.4136 vs 0.4353
+  P-value: 0.586193 ns
+  Disposição menor para pagar frete na data comemorativa
+
+dia_das_criancas vs normal:
+  Razão frete: 0.4478 vs 0.4353
+  P-value: 0.491998 ns
+  Disposição MAIOR para pagar frete na data comemorativa
+
+natal vs normal:
+  Razão frete: 0.4308 vs 0.4353
+  P-value: 0.798360 ns
+  Disposição menor para pagar frete na data comemorativa
+
+--- REGIÃO: NORDESTE ---
+
+Estatísticas de razão do frete por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    215  0.3495  0.2398
+dia_das_maes        383  0.3783  0.2924
+dia_dos_pais        403  0.4040  0.2880
+natal               171  0.3935  0.2741
+normal             7764  0.3951  0.2794
+
+dia_das_maes vs normal:
+  Razão frete: 0.3783 vs 0.3951
+  P-value: 0.130678 ns
+  Disposição menor para pagar frete na data comemorativa
+
+dia_dos_pais vs normal:
+  Razão frete: 0.4040 vs 0.3951
+  P-value: 0.738026 ns
+  Disposição MAIOR para pagar frete na data comemorativa
+
+dia_das_criancas vs normal:
+  Razão frete: 0.3495 vs 0.3951
+  P-value: 0.091126 ns
+  Disposição menor para pagar frete na data comemorativa
+
+natal vs normal:
+  Razão frete: 0.3935 vs 0.3951
+  P-value: 0.964984 ns
+  Disposição menor para pagar frete na data comemorativa
+
+--- REGIÃO: CENTRO-OESTE ---
+
+Estatísticas de razão do frete por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    111  0.3099  0.2420
+dia_das_maes        233  0.2611  0.1869
+dia_dos_pais        262  0.3189  0.2337
+natal               101  0.3048  0.2264
+normal             4820  0.3329  0.2530
+
+dia_das_maes vs normal:
+  Razão frete: 0.2611 vs 0.3329
+  P-value: 0.000554 ***
+  Disposição menor para pagar frete na data comemorativa
+
+dia_dos_pais vs normal:
+  Razão frete: 0.3189 vs 0.3329
+  P-value: 0.695035 ns
+  Disposição menor para pagar frete na data comemorativa
+
+dia_das_criancas vs normal:
+  Razão frete: 0.3099 vs 0.3329
+  P-value: 0.296121 ns
+  Disposição menor para pagar frete na data comemorativa
+
+natal vs normal:
+  Razão frete: 0.3048 vs 0.3329
+  P-value: 0.404173 ns
+  Disposição menor para pagar frete na data comemorativa
+
+--- REGIÃO: SUDESTE ---
+
+Estatísticas de razão do frete por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas   1251  0.2591  0.1954
+dia_das_maes       2585  0.2593  0.2250
+dia_dos_pais       3073  0.2671  0.2023
+natal               959  0.2543  0.1957
+normal            57417  0.2695  0.2105
+
+dia_das_maes vs normal:
+  Razão frete: 0.2593 vs 0.2695
+  P-value: 0.000000 ***
+  Disposição menor para pagar frete na data comemorativa
+
+dia_dos_pais vs normal:
+  Razão frete: 0.2671 vs 0.2695
+  P-value: 0.550968 ns
+  Disposição menor para pagar frete na data comemorativa
+
+dia_das_criancas vs normal:
+  Razão frete: 0.2591 vs 0.2695
+  P-value: 0.508436 ns
+  Disposição menor para pagar frete na data comemorativa
+
+natal vs normal:
+  Razão frete: 0.2543 vs 0.2695
+  P-value: 0.051775 ns
+  Disposição menor para pagar frete na data comemorativa
+
+--- REGIÃO: SUL ---
+
+Estatísticas de razão do frete por período:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas    251  0.2951  0.2144
+dia_das_maes        545  0.2945  0.2280
+dia_dos_pais        659  0.3219  0.2461
+natal               197  0.3044  0.2407
+normal            11962  0.3223  0.2414
+
+dia_das_maes vs normal:
+  Razão frete: 0.2945 vs 0.3223
+  P-value: 0.008888 ***
+  Disposição menor para pagar frete na data comemorativa
+
+dia_dos_pais vs normal:
+  Razão frete: 0.3219 vs 0.3223
+  P-value: 0.763604 ns
+  Disposição menor para pagar frete na data comemorativa
+
+dia_das_criancas vs normal:
+  Razão frete: 0.2951 vs 0.3223
+  P-value: 0.147910 ns
+  Disposição menor para pagar frete na data comemorativa
+
+natal vs normal:
+  Razão frete: 0.3044 vs 0.3223
+  P-value: 0.143077 ns
+  Disposição menor para pagar frete na data comemorativa
+
+================================================================================
+RANKING GERAL: QUAL DATA COMEMORATIVA TEM MAIOR DISPOSIÇÃO PARA PAGAR FRETE
+================================================================================
+
+Estatísticas gerais de razão do frete:
+                  count    mean     std
+seasonal_period                        
+dia_das_criancas   1861  0.2808  0.2109
+dia_das_maes       3819  0.2786  0.2356
+dia_dos_pais       4474  0.2931  0.2258
+natal              1459  0.2846  0.2227
+
+Comparações par a par (6 testes):
+dia_das_maes vs dia_dos_pais: 0.2786 vs 0.2931, p=0.00000 *** → dia_dos_pais
+dia_das_maes vs dia_das_criancas: 0.2786 vs 0.2808, p=0.00469 *** → dia_das_criancas
+dia_das_maes vs natal: 0.2786 vs 0.2846, p=0.03394 *** → natal
+dia_dos_pais vs dia_das_criancas: 0.2931 vs 0.2808, p=0.22216 ns → dia_dos_pais
+dia_dos_pais vs natal: 0.2931 vs 0.2846, p=0.10225 ns → dia_dos_pais
+dia_das_criancas vs natal: 0.2808 vs 0.2846, p=0.63677 ns → natal
+
+RANKING FINAL DE DISPOSIÇÃO PARA PAGAR FRETE:
+1. dia_dos_pais (pontos: 2.0, razão frete: 0.2931)
+2. natal (pontos: 2.0, razão frete: 0.2846)
+3. dia_das_criancas (pontos: 2.0, razão frete: 0.2808)
+4. dia_das_maes (pontos: 0.0, razão frete: 0.2786)
+
+================================================================================
+CRIANDO VISUALIZAÇÕES SAZONAIS
+================================================================================
+Visualização salva: charts/seasonal_analysis_comprehensive.png
+
+================================================================================
+ANÁLISE DE SAZONALIDADE CONCLUÍDA!
+================================================================================
